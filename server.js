@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // DeepSeek API配置
-const DEEPSEEK_API_KEY = '57e4e2ff-7e08-432a-b0bd-afe6061e32fc';
+const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY;
 const DEEPSEEK_API_URL = 'https://ark.cn-beijing.volces.com/api/v3/chat/completions';
 
 // 处理聊天请求
